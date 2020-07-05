@@ -1,7 +1,7 @@
 import sys
 def read(): return map(int, sys.stdin.readline().split())
-c,k = read()
 
+# c,k = read()
 # c = str(c)
 # if int(c[-k]) < 5:
 #     result = c[:-k] + '0'*k
