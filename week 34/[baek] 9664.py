@@ -6,4 +6,9 @@ remains = read()
 
 N = daughters-1
 M = remains//N
-print(M*(daughters)-1, M*(daughters))
+if N*M < remains:
+    fragments = remains - (N*M)
+    ans = fragments + daughters*M
+    print(ans, ans)
+else:
+    print(M*(daughters)-1, M*(daughters))
