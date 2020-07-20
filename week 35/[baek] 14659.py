@@ -8,7 +8,7 @@ for i in range(len(mts)-1):
     for j in range(i+1, len(mts)):
         if mts[i] > mts[j]:
             count += 1
-        else: # 여기가 왜 있어야하지?
+        else: # 여기가 왜 있어야하지? => 문제 조건을 똑바로 읽자.
             break
     maxi = count if count > maxi else maxi
 print(maxi)

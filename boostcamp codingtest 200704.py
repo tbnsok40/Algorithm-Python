@@ -31,24 +31,6 @@ def check_duplicate(list):
     return answer
 print(check(name_list))
 
-# def unique_string(name_list):
-#     tmp_list = list()
-#     for s in data:
-#         if s in tmp_list:
-#             return False
-#         else:
-#             tmp_list.append(s)
-#     return True
-
-
-
-
-
-
-
-
-
-
 
 # #2
 # seta = [1,2,3]

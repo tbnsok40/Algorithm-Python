@@ -11,7 +11,6 @@ def read(): return map(int, sys.stdin.readline().split())
 # print(int(result))
 
 ################################
-
 c, k = read()
 if k == 0:
     print(c)
@@ -25,7 +24,5 @@ else:
         print(n)
     else:
         print(n + t)
-
-
 # 어느 반례를 못뚫었는지
 # 만약 액면가가 1원이면?
