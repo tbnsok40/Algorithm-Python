@@ -3,13 +3,11 @@
 list2 = [ [1,2,3], [4,5,6], [7,8,9] ]
 new_list = list(map(list, zip(*list2)))
 print(*list2)
-
 # 1
 mylist = [ 1,2,3 ]
 new_list = [ 40, 50, 60 ]
 for j in zip(mylist, new_list):
    print(j)
-
 # 2
 list1 = [1, 2, 3, 4]
 list2 = [100, 120, 30, 300]
