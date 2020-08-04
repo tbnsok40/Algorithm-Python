@@ -19,10 +19,16 @@
 #             thou.append(str(i))
 #     return ('').join(one[::-1]) + ('').join(dec[::-1])+ ('').join(hund[::-1])+('').join(thou[::-1])
 
-# li = [3, 330, 34, 5, 9,1000]
+li = [3, 30, 34, 5, 9,1000]
 # # 지린다
 # def solution(numbers):
 #     numbers = list(map(str, numbers))
 #     numbers.sort(key=lambda x: x*3, reverse=True)
 #     return str(int(''.join(numbers)))
 # print(solution(li))
+# li = [0,0,0,0,0]
+def solution(li):
+    list1 = list(map(str, li))
+    list1.sort(key=lambda x:x*3 ,reverse = True)
+    return int(''.join(list1))
+print(solution(li))
