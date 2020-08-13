@@ -28,3 +28,6 @@ def sosu(list1):
     return count
 # 이중 for문을 2개나 썼다, 안예뻐
 print(solution(numbers))
+
+
+# 프로그래머스 문제 다 풀고 유튜브 해도 재밌겠다. 고수의 풀이 이런거 하면서, 내꺼의풀이(하수 ㅉㅉ 이렇게)
