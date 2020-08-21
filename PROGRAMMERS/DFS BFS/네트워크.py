@@ -1,20 +1,25 @@
 # dfs
 def solution(n, computers):
-    answer = 0
+    answer =0
     visit = [0] * n
-    def dfs(start):
-        st = [start]
-        while st:
-            com_num = st.pop()
-            if visit[com_num] == 0:
-                visit[com_num] = 1
-            for i in range(len(computers)):
-                if visit[i] == 0 and computers[com_num][i] == 1: #인접노드로 연결돼 있으면서 and 아직 미방문된 네트워크를
-                    st.append(i) # 을 탐색해야하므로 st에 넣어준다
+    def dfs_def(start):
+        dfs = [start]
+        while dfs:
+            com_num = dfs.pop()
+            # if visit[com_num] == 0:
+            #     visit[com_num] = 1
+            visit[com_num] = 1
+            for i in range(n):
+                if visit[i] == 0 and computers[com_num][i] == 1:
+                    # 아직 방문은 안했는데, 현재 노드와 연결된 노드를 찾는다.
+                    dfs.append(i)
+            # 그럼 현재 while 문이 계속 돌면서, 이어진 노드들에 대한 연쇄적으로 탐색이 이루어진다.
+            # 깊이 우선 탐색이 된다.
+        return
     i = 0
     while 0 in visit:
         if visit[i] == 0:
-            dfs(i)
+            dfs_def(i)
             answer += 1
         i += 1
     return answer
