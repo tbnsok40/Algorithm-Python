@@ -1,7 +1,6 @@
 # answer = 0
 # def DFS(idx, numbers, target, curr_value):
 #     global answer
-#
 #     N = len(numbers)
 #     if (idx == N and curr_value == target):
 #         answer += 1
@@ -21,11 +20,7 @@
 # print(solution(numbers,target))
 
 # beautiful
-# from itertools import product
-# def solution(numbers, target):
-#     l = [(x, -x) for x in numbers]
-#     s = list(map(sum, product(*l)))
-#     return s.count(target)
+
 numbers = [1,1,1,1,1]
 target = 3
 
