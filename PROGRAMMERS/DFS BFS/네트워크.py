@@ -1,7 +1,7 @@
 # dfs
 def solution(n, computers):
     answer = 0
-    visit = [0 for _ in range(n)]
+    visit = [0] * n
     def dfs(start):
         st = [start]
         while st:
@@ -9,8 +9,8 @@ def solution(n, computers):
             if visit[com_num] == 0:
                 visit[com_num] = 1
             for i in range(len(computers)):
-                if computers[com_num][i] == 1 and visit[i] == 0:
-                    st.append(i)
+                if visit[i] == 0 and computers[com_num][i] == 1: #인접노드로 연결돼 있으면서 and 아직 미방문된 네트워크를
+                    st.append(i) # 을 탐색해야하므로 st에 넣어준다
     i = 0
     while 0 in visit:
         if visit[i] == 0:
@@ -23,7 +23,7 @@ print(solution(3,computers))
 
 
 # bfs
-def solution(n, computers):
+def solution2(n, computers):
     # 1
     answer = 0 # 네트워크의 개수를 저장할 변수
     bfs = [] # 탐색을 위한 큐
@@ -46,4 +46,4 @@ def solution(n, computers):
         answer += 1
     return answer
 
-
+print(solution2(3, computers))

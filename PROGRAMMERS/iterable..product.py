@@ -5,7 +5,7 @@ iterable2 = 'xy'
 iterable3 = '123'
 
 for j in itertools.product(iterable1,iterable2,iterable3):
-    print(*j)
+    print(j)
 
 my_list = [[1, 2], [3, 4], [5, 6]]
 
