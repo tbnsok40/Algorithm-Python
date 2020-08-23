@@ -23,7 +23,7 @@ def solution(n, computers):
             answer += 1
         i += 1
     return answer
-computers= [[1,0,0],[0,1,0],[0,0,1]]
+computers= [[1,1,0],[0,1,0],[0,0,1]]
 print(solution(3,computers))
 
 
@@ -52,3 +52,5 @@ def solution2(n, computers):
     return answer
 
 print(solution2(3, computers))
+
+
