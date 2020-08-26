@@ -31,7 +31,7 @@ def solution(begin, target, words):
 
     return 0
 
-print(solution(begin,target,words))
+# print(solution(begin,target,words))
 
 ###########################################3
 
@@ -66,14 +66,40 @@ def solution3(begin, target,words):
                 q.append((word, level+1))
     return
 
-print(solution3(begin,target,words))
+# print(solution3(begin,target,words))
 
 
 
 
+# 각 단어별, transible 한 단어들을 딕셔너리 형태로 만든다.
+# 어떤 단어를 탐색하고 싶으면, 해당 key를 for문으로 queue에 삽입
+# queue에서 pop하는 형태로 한다.
+# pop 된 것이 target과 맞으면 level+1해서 return
+# 그 외는 level+1해서  queue에 append
 
+transistable =  lambda a,b: sum((1 if x != y else 0) for x, y in zip(a,b))==1
+from collections import deque as queue
+def solution4(begin, target, words):
+    d, q = dict(), queue()
+    level = 0
+    #dict 생성
+    d[begin] = set(filter(lambda x: transistable(x, begin),words))
+    q.append((begin, level))
 
+    for word in words:
+        d[word] = set(filter(lambda x: transistable(x,word), words))
 
+    while q:
+        print(q)
+        keyword, level = q.popleft()
+        if len(words) < level:
+            return 0
 
+        for word in d[keyword]:
+            if word == target:
+                return level+1
+            else:
+                q.append((word,level+1))
 
-
+    return
+print(solution4(begin,target,words))
