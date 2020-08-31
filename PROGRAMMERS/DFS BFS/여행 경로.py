@@ -1,5 +1,6 @@
-tickets = [['ICN', 'SFO'], ['ICN', 'ATL'], ['SFO', 'ATL'], ['ATL', 'ICN'], ['ATL','SFO']]
+# tickets = [['ICN', 'SFO'], ['ICN', 'ATL'], ['SFO', 'ATL'], ['ATL', 'ICN'], ['ATL','SFO']]
 # tickets = [['ICN', 'JFK'], ['HND', 'IAD'], ['JFK', 'HND']]
+tickets = [['ICN','B'],['ICN','C'],['D','ICN'],['C','D']]
 from collections import deque as queue
 def solution(tickets):
     # dictionary 정렬/정리
@@ -19,6 +20,7 @@ def solution(tickets):
         top = stack[-1]
         if top not in d or len(d[top]) == 0:
             path.append(stack.pop())
+            print(path)
         else:
             # print('answer',stack)
             stack.append(d[top].pop())
