@@ -7,7 +7,6 @@ import collections
 import heapq
 def solution(n, src, dst, edges, K):
     que = collections.defaultdict(list)
-
     for str, dst, price in edges:
         que[str].append((dst, price)) # dictionary 완료
 
