@@ -8,4 +8,7 @@
 - 20.10.21 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/22OCT%20%EC%8A%A4%EC%BD%94%EB%B9%8C%EC%A7%80%EC%88%98.py'> 다음큰숫자 프로그래머스 </a>
 - 20.10.22 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/22OCT%20%EC%8A%A4%EC%BD%94%EB%B9%8C%EC%A7%80%EC%88%98.py'> 스코빌지수 프로그래머스 </a>
 - 20.10.23 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/23OCT%20%EB%B0%B0%EC%83%81%EB%B9%84%EC%9A%A9%EC%B5%9C%EC%86%8C%ED%99%94.py'> 배상비용최소화 프로그래머스 </a>
+- 20.10.24 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/24OCT%20%ED%94%84%EB%A6%B0%ED%84%B0.py'> 프린터 프로그래머스 </a>
+- 20.10.25 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/25OCT%20%EB%B0%B0%EB%8B%AC.py'> 배달 프로그래머스 </a>
+
 
