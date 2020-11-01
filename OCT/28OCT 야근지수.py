@@ -33,3 +33,8 @@ def solution(n, works):
         works[0] -= 1
 
     return sum(map(lambda x: x**2, works))
+
+## heapq -> heapq.heapify : O(n)
+## heapq -> heapq.heappush or heapq.heappop : O(log(n))
+
+
