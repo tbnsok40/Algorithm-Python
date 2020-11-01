@@ -13,7 +13,7 @@
 - 20.10.26 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/26OCT%20%EC%98%AC%EB%B0%94%EB%A5%B8%EA%B4%84%ED%98%B8.py'> 올바른괄호 프로그래머스 </a>
 - 20.10.27 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/27OCT%20%EC%A0%84%EC%97%BC%EB%B3%91.py'> 전염병 프로그래머스 </a>
 - 20.10.28 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/28OCT%20%EC%95%BC%EA%B7%BC%EC%A7%80%EC%88%98.py'> 야근지수 프로그래머스 </a>
-- 20.10.29 |
+- 20.10.29 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/29OCT%20%EC%B2%B4%EC%9C%A1%EB%B3%B5.py'> 체육복 프로그래머스 </a>
 - 20.10.30 |
 - 20.10.31 |
 - 20.11.01 |
