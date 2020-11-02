@@ -35,8 +35,13 @@
 #     return len(answer)
 
 
+def solution(n):
+    answer = set(i for i in range(2, n+1))
+    for i in range(2,n+1):
+        if i in answer:
+            answer -= set(range(i*2, n+1, i))
+    return answer
 
-
-# print(solution(10))
+print(solution(15))
 
 
