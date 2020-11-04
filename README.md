@@ -16,7 +16,12 @@
 - 20.10.29 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/29OCT%20%EC%B2%B4%EC%9C%A1%EB%B3%B5.py'> 체육복 프로그래머스 </a>
 - 20.10.30 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/30OCT%20%EB%91%90%EC%A0%95%EC%88%98%EC%82%AC%EC%9D%B4%EC%9D%98%ED%95%A9.py'> 두 정수 사이의 합 프로그래머스 </a>
 - 20.10.31 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/31OCT%20%EC%86%8C%EC%88%98%EC%B0%BE%EA%B8%B0.py'> 소수 찾기 프로그래머스 </a>
-- 20.11.01 |
+- 20.11.01 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/31OCT%20%EC%86%8C%EC%88%98%EC%B0%BE%EA%B8%B0.py'> 문자열을 정수로 바꾸기 프로그래머스 </a>
+- 20.11.02 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/31OCT%20%EC%86%8C%EC%88%98%EC%B0%BE%EA%B8%B0.py'> 두개 뽑아서 더하기 프로그래머스 </a>
+- 20.11.03 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/31OCT%20%EC%86%8C%EC%88%98%EC%B0%BE%EA%B8%B0.py'> 나누어 떨어지는 숫자배열 프로그래머스 </a>
+- 20.11.04 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/31OCT%20%EC%86%8C%EC%88%98%EC%B0%BE%EA%B8%B0.py'> 문자열 내 P와Y의 개수 프로그래머스 </a>
 
 
 
+
+https://programmers.co.kr/learn/courses/30/lessons/12916
