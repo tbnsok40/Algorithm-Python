@@ -17,8 +17,10 @@ def solution(s, n):
         intLetter = ord(letter)
         if letter != ' ':
             if intLetter <= 90:
+                print('1',(((intLetter + n) % 90) + 65))
                 answer += chr(((intLetter + n) % 90) + 65)
             elif intLetter >=97:
+                print('2',(((intLetter + n) % 122) + 97))
                 answer += chr(((intLetter + n) % 122) + 97)
         else:
             answer += letter
