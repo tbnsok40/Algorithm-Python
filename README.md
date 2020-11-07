@@ -20,8 +20,9 @@
 - 20.11.02 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/02NOV%20%EB%91%90%EA%B0%9C%EB%BD%91%EC%95%84%EC%84%9C%EB%8D%94%ED%95%98%EA%B8%B0.py'> 두개 뽑아서 더하기 프로그래머스 </a>
 - 20.11.03 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/03NOV%20%EB%82%98%EB%88%84%EC%96%B4%EB%96%A8%EC%96%B4%EC%A7%80%EB%8A%94%EC%88%AB%EC%9E%90%EB%B0%B0%EC%97%B4.py'> 나누어 떨어지는 숫자배열 프로그래머스 </a>
 - 20.11.04 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/04NOV%20%EB%AC%B8%EC%9E%90%EC%97%B4%EB%82%B4P%EC%99%80Y%EC%9D%98%EA%B0%9C%EC%88%98.py'> 문자열 내 P와Y의 개수 프로그래머스 </a>
-- 20.11.05 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/04NOV%20%EB%AC%B8%EC%9E%90%EC%97%B4%EB%82%B4P%EC%99%80Y%EC%9D%98%EA%B0%9C%EC%88%98.py'> 시저암호 프로그래머스 </a>
-- 20.11.06 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/04NOV%20%EB%AC%B8%EC%9E%90%EC%97%B4%EB%82%B4P%EC%99%80Y%EC%9D%98%EA%B0%9C%EC%88%98.py'> 제일작은수제거 프로그래머스 </a>
+- 20.11.05 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/05NOV%20%EC%8B%9C%EC%A0%80%EC%95%94%ED%98%B8.py'> 시저암호 프로그래머스 </a>
+- 20.11.06 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/06NOV%20%EC%A0%9C%EC%9D%BC%EC%9E%91%EC%9D%80%EC%88%98%EC%A0%9C%EA%B1%B0.py'> 제일작은수제거 프로그래머스 </a>
+- 20.11.07 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/07NOV%20%EC%9E%90%EC%97%B0%EC%88%98%EB%92%A4%EC%A7%91%EC%96%B4%EB%B0%B0%EC%97%B4%EB%A1%9C%EB%A7%8C%EB%93%A4%EA%B8%B0.py'> 자연수뒤집어배열로만들기 프로그래머스 </a>
 
 
 
