@@ -23,3 +23,5 @@
 - 20.11.05 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/05NOV%20%EC%8B%9C%EC%A0%80%EC%95%94%ED%98%B8.py'> 시저암호 프로그래머스 </a>
 - 20.11.06 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/06NOV%20%EC%A0%9C%EC%9D%BC%EC%9E%91%EC%9D%80%EC%88%98%EC%A0%9C%EA%B1%B0.py'> 제일작은수제거 프로그래머스 </a>
 - 20.11.07 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/07NOV%20%EC%9E%90%EC%97%B0%EC%88%98%EB%92%A4%EC%A7%91%EC%96%B4%EB%B0%B0%EC%97%B4%EB%A1%9C%EB%A7%8C%EB%93%A4%EA%B8%B0.py'> 자연수뒤집어배열로만들기 프로그래머스 </a>
+- 20.11.08 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/08NOV%20%EC%9E%90%EB%A6%BF%EC%88%98%EB%8D%94%ED%95%98%EA%B8%B0.py'> 자릿수 더하기 프로그래머스 </a>
+- 20.11.09 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/09NOV%20%EC%A0%95%EC%88%98%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C%EB%B0%B0%EC%97%B4%ED%95%98.py'> 정수 내림차순으로 배열하기 프로그래머스 </a>
