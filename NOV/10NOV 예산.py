@@ -1,16 +1,11 @@
 def solution(d, budget):
-
-    if sum(d) == budget:
-        return len(d)
-
-# d = [1,3,2,5,4]
-# budget = 9
-#
-# d = [2,2,3,3]
-# budget = 10
-# print(solution(d,budget))
+    d.sort()
+    while budget < sum(d):
+        d.pop() # pop()은 리스트[-1]원소부터 빠지는 것, pop(0)가 맨 앞 원소 pop
+    return len(d)
 
 
+# (추가) 정수제곱근판별
 # import math
 # def solution(n):
 #     if math.sqrt(n) % 1 != 0:
