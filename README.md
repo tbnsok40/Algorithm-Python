@@ -29,6 +29,6 @@
 - 20.11.11 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/11NOV%20x%EB%A7%8C%ED%81%BC%EA%B0%84%EA%B2%A9%EC%9D%B4%EC%9E%88%EB%8A%94n%EA%B0%9C%EC%9D%98%EC%88%AB%EC%9E%90.py'> x만큼 간격이 있는 n개의 숫자 프로그래머스 </a>
 - 20.11.12 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/12NOV%20%ED%82%A4%ED%8C%A8%EB%93%9C%EB%88%84%EB%A5%B4%EA%B8%B0(%EC%B9%B4%EC%B9%B4%EC%98%A4).py'> 키패드누르기(카카오) 프로그래머스 </a>
 - 20.11.13 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/13NOV%20%ED%95%98%EC%83%A4%EB%93%9C%EC%88%98.py'> 하샤드수 프로그래머스 </a>
-
+- 20.11.14 | <a href = ''> 3진법 뒤집기 프로그래머스 </a>
 - 20.11. | <a href = ''>  </a>
 
