@@ -1,7 +1,7 @@
 s = ' try   hello world'
 s = ' print hello   world'
 s = '    print   h e l l o   wor  ld'
-# s = 'AAAAaAA   nnAAAAA     A A A A AAAAA AAA'
+
 # 공백이 연속됨을 고려못한 풀이
 def solution(s):
     s = s.lower()
@@ -16,7 +16,6 @@ def solution(s):
         answer += ' '
     return answer
 # 연속된 공백 처리 ok but 끝에 rstrip(' ')해줘야 하는 상황을 만들어 놓은게 에러 원인
-print(solution(s))
 
 # 남의 풀이
 def solution(s):
@@ -33,12 +32,9 @@ def solution(s):
             idx = 0
             charlist += ' '
     return charlist
-print(solution(s))
-
 
 # 한줄 샷
 def solution(s):
-
     return ' '.join([''.join([c.upper() if i % 2 == 0 else c.lower() for i, c in enumerate(w)]) for w in s.split(' ')])
 
 print(solution(s))
