@@ -1,11 +1,17 @@
 # 3번의 기회
 # 두자리수는 어차피 10 하나
 # 1이 나오면 1인지 10인지 확인 => 1 다음이 int형이면 10인거지
+# 가장 앞 숫자가 0일 때 처리해줘야한다.
+
 def solution(dartResult):
     temp = []
-    for letter in dartResult:
+    for idx, letter in enumerate(dartResult):
+        if idx == 0 and letter == '0':
+            temp.append(0)
+            continue
 
         try:
+
             if letter == '0' and temp[-1] == 1:
                 temp.pop()
                 temp.append(10) # 이전의 1은 제거해줘야한다.
@@ -45,4 +51,5 @@ def solution(dartResult):
 dartResult = '1D#2S*3S'
 # dartResult = '1S*2T*3S'
 dartResult = '1D2S0T'
+dartResult = '0S10S0T'
 print(solution(dartResult))
