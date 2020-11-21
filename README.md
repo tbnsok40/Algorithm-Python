@@ -31,6 +31,12 @@
 - 20.11.13 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/13NOV%20%ED%95%98%EC%83%A4%EB%93%9C%EC%88%98.py'> 하샤드수 프로그래머스 </a>
 - 20.11.14 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/14NOV%203%EC%A7%84%EB%B2%95%EB%92%A4%EC%A7%91%EA%B8%B0.py'> 3진법 뒤집기 프로그래머스 </a>
 - 20.11.15 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/15NOV%20%EC%B5%9C%EB%8C%80%EA%B3%B5%EC%95%BD%EC%88%98%EC%99%80%20%EC%B5%9C%EC%86%8C%EA%B3%B5%EB%B0%B0%EC%88%98.py'> 최대공약수와 최소공배수 프로그래머스 </a>
-
+- 20.11.16 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/16NOV%20%EC%9D%B4%EC%83%81%ED%95%9C%EB%AC%B8%EC%9E%90%EB%A7%8C%EB%93%A4%EA%B8%B0.py'> 이상한 문자만들기 프로그래머스 </a>
+- 20.11.17 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/17NOV%20%EB%B9%84%EB%B0%80%EC%A7%80%EB%8F%84.py'> 비밀지도 프로그래머스 </a>
+- 20.11.18 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/18NOV%20%EC%8B%9C%EC%A0%80%EC%95%94%ED%98%B8.py'> 시저암호 프로그래머스 </a>
+- 20.11.19 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/19NOV.py'> 다트게임 프로그래머스 </a>
+- 20.11. | <a href = ''>  </a>
+- 20.11. | <a href = ''>  </a>
 - 20.11. | <a href = ''>  </a>
 
+- 20.11. | <a href = ''>  </a>
