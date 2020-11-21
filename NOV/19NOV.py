@@ -3,6 +3,7 @@
 # 1이 나오면 1인지 10인지 확인 => 1 다음이 int형이면 10인거지
 # 가장 앞 숫자가 0일 때 처리해줘야한다.
 
+
 def solution(dartResult):
     temp = []
     for idx, letter in enumerate(dartResult):
