@@ -35,8 +35,8 @@
 - 20.11.17 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/17NOV%20%EB%B9%84%EB%B0%80%EC%A7%80%EB%8F%84.py'> 비밀지도(카카오) 프로그래머스 </a>
 - 20.11.18 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/18NOV%20%EC%8B%9C%EC%A0%80%EC%95%94%ED%98%B8.py'> 시저암호 프로그래머스 </a>
 - 20.11.19 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/19NOV.py'> 다트게임(카카오) 프로그래머스 </a>
-- 20.11. | <a href = ''> 실패율(카카오) 프로그래머스 </a>
-- 20.11. | <a href = ''>  </a>
-- 20.11. | <a href = ''>  </a>
+- 20.11.20 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/20NOV%20%EC%8B%A4%ED%8C%A8%EC%9C%A8.py'> 실패율(카카오) 프로그래머스 </a>
+- 20.11.21 | <a href = ''>  </a>
+- 20.11.22 | <a href = ''>  </a>
 
 - 20.11. | <a href = ''>  </a>
