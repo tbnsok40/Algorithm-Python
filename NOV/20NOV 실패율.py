@@ -1,31 +1,28 @@
+# N: 스테이지 수/단계
+# stages, 각 참가자가 머물고있는 '단계'
+# 각 원소가 몇개인지, ex)1이 몇개인지, 4가 몇개인지 dictionary
+
 def solution(N, stages):
-    stage_dict = {}
-    rate_dict = {}
+
+    stage_dic = {}
+    members = len(stages)
     for i in stages:
         try:
-            stage_dict[i] += 1
-        except KeyError:
-            stage_dict[i] = 1
+            stage_dic[i] += 1
+        except:
+            stage_dic[i] = 1
 
-    stage_set = sorted(stage_dict.items(), key=lambda x: x[0])
-    print(stage_set)
-    key_, val_ = stage_set[0]
-    rate_dict[key_] = val_ / len(stages)
-    temp = val_
-    for key, val in stage_set[1:]:
-        mod = len(stages)-temp
-        print(key, val)
-        rate_dict[key] = val / mod
-        temp = val
-    rate_dict2 = sorted(rate_dict.items(), key = lambda x: x[1], reverse=True)
-    print(rate_dict2)
-    # for i in (sorted(stage_dict)):
-    #     rate_dict[i] = stage_dict[i] / (N)
-    #     before = i
-    #
-    # rate_dict = sorted(rate_dict.items(), key=lambda x:x[1], reverse=True)
-    return
+    result = {}
+    for i in range(1, N + 1):
+        try:
+            result[i] = stage_dic[i] / members
+            members = members - stage_dic[i]
+        except:
+            result[i] = 0
 
-N = 5
-stages = [2, 1, 2, 6, 2, 4, 3, 3]
-print(solution(N, stages))
+    result = sorted(result.items(), key = lambda x: x[1], reverse=True)
+    return list(map(lambda x:x[0], result))
+
+
+# 스스로 생각하는 법을 잊은
+# 니들의 대표적인 병명은 선택장애
