@@ -36,7 +36,8 @@
 - 20.11.18 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/18NOV%20%EC%8B%9C%EC%A0%80%EC%95%94%ED%98%B8.py'> 시저암호 프로그래머스 </a>
 - 20.11.19 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/19NOV.py'> 다트게임(카카오) 프로그래머스 </a>
 - 20.11.20 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/20NOV%20%EC%8B%A4%ED%8C%A8%EC%9C%A8.py'> 실패율(카카오) 프로그래머스 </a>
-- 20.11.21 | <a href = ''>  </a>
-- 20.11.22 | <a href = ''>  </a>
+- 20.11.21 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/21NOV%20%ED%81%AC%EB%A0%88%EC%9D%B8%EC%9D%B8%ED%98%95%EB%BD%91%EA%B8%B0%EA%B2%8C%EC%9E%84.py'> 크레인인형뽑기게임(카카오) 프로그래머스 </a>
+- 20.11.22 | <a href = ''> 프린터 </a>
+- 20.11.23 | <a href = ''> 124 나라의 숫자 </a>
 
 - 20.11. | <a href = ''>  </a>
