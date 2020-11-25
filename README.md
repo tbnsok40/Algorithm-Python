@@ -38,9 +38,9 @@
 - 20.11.20 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/20NOV%20%EC%8B%A4%ED%8C%A8%EC%9C%A8.py'> 실패율(카카오) 프로그래머스 </a>
 - 20.11.21 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/21NOV%20%ED%81%AC%EB%A0%88%EC%9D%B8%EC%9D%B8%ED%98%95%EB%BD%91%EA%B8%B0%EA%B2%8C%EC%9E%84.py'> 크레인인형뽑기게임(카카오) 프로그래머스 </a>
 - 20.11.22 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/22NOV%20%ED%94%84%EB%A6%B0%ED%84%B0.py'> 프린터 </a>
-- 20.11.23 | <a href = ''> 124 나라의 숫자 </a>
-- 20.11.24 | <a href = ''>  </a>
-- 20.11.25 | <a href = ''>  </a>
+- 20.11.23 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/23NOV%20124%EB%82%98%EB%9D%BC%EC%9D%98%EC%88%AB%EC%9E%90.py'> 124 나라의 숫자 프로그래머스 </a>
+- 20.11.24 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/24NOV%20%EC%A3%BC%EC%8B%9D%EA%B0%80%EA%B2%A9.py'> 주식가격 프로그래머스 </a>
+- 20.11.25 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/25NOV%20%EC%8A%A4%ED%82%AC%ED%8A%B8%EB%A6%AC.py'> 스킬트리 프로그래머 </a>
 - 20.11.26 | <a href = ''>  </a>
 
 - 20.11. | <a href = ''>  </a>
