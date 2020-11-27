@@ -23,3 +23,5 @@ def solution(progresses, speeds):
                 pass
     result.append(count)
     return result
+
+# 더 깔끔하게 안되나?
