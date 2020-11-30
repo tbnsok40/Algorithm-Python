@@ -44,8 +44,8 @@
 - 20.11.26 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/26NOV%20%EB%8B%A4%EB%A6%AC%EB%A5%BC%EC%A7%80%EB%82%98%EB%8A%94%ED%8A%B8%EB%9F%AD.py'> 다리를 지나는 트럭 프로그래머스 </a>
 - 20.11.27 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/27NOV%20%EA%B8%B0%EB%8A%A5%EA%B0%9C%EB%B0%9C.py'> 기능개발 프로그래머스 </a>
 - 20.11.28 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/28NOV%20%EB%AC%B8%EC%9E%90%EC%97%B4%EC%95%95%EC%B6%95.py'> 문자열압축(카카오) 프로그래머스 </a>
-- 20.11.29 | <a href = ''>  </a>
-- 20.11.30 | <a href = ''>  </a>
+- 20.11.29 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/29NOV%20%EB%8D%94%EB%A7%B5%EA%B2%8C.py'> 더맵게 프로그래머스 </a>
+- 20.11.30 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/30NOV%20%EA%B0%80%EC%9E%A5%ED%81%B0%EC%88%98.py'> 가장큰수 프로그래머스(retry) </a>
 
 
 - 20.11. | <a href = ''>  </a>
