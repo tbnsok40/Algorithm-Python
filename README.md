@@ -42,8 +42,8 @@
 - 20.11.24 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/24NOV%20%EC%A3%BC%EC%8B%9D%EA%B0%80%EA%B2%A9.py'> 주식가격 프로그래머스 </a>
 - 20.11.25 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/25NOV%20%EC%8A%A4%ED%82%AC%ED%8A%B8%EB%A6%AC.py'> 스킬트리 프로그래머 </a>
 - 20.11.26 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/26NOV%20%EB%8B%A4%EB%A6%AC%EB%A5%BC%EC%A7%80%EB%82%98%EB%8A%94%ED%8A%B8%EB%9F%AD.py'> 다리를 지나는 트럭 프로그래머스 </a>
-- 20.11.27 | <a href = ''>  </a>
-- 20.11.28 | <a href = ''>  </a>
+- 20.11.27 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/27NOV%20%EA%B8%B0%EB%8A%A5%EA%B0%9C%EB%B0%9C.py'> 기능개발 프로그래머스 </a>
+- 20.11.28 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/28NOV%20%EB%AC%B8%EC%9E%90%EC%97%B4%EC%95%95%EC%B6%95.py'> 문자열압축 프로그래머스 </a>
 - 20.11.29 | <a href = ''>  </a>
 - 20.11.30 | <a href = ''>  </a>
 
