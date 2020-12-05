@@ -1,4 +1,3 @@
-
 clothes = [["yellow_hat", 'headgear'], ['blue_sunglasses', 'eyewear'], ['green_turban', 'headgear']]
 # clothes = [['crow_mask', 'face'], ['blue_sunglasses', 'face'], ['smoky_makeup', 'face']]
 
@@ -18,7 +17,6 @@ def solution(clothes):
     ans = 1
     for t in temp:
         ans *= (t + 1)
-
     return ans - 1
 
 print(solution(clothes))
