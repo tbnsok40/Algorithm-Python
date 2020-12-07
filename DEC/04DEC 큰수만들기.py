@@ -18,6 +18,7 @@ def solution(number, k):
     result = result[:-k] if k > 0 else result
 
     return ''.join(result)
+
 print(solution(number, k))
 
 # 스타트업 드라마의 교훈은 할머니가 어린 지평에게 손을 건넨 것으로 시작한다. 손을 건넬줄 아는 것.
