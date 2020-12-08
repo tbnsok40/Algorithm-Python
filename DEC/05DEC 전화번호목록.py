@@ -19,3 +19,15 @@ phone_book = ['119', '97674223', '1195524421']
 phone_book = ['123','456','789']
 phone_book = ['123']
 print(solution(phone_book))
+
+
+# 정규식이용한 풀이 공부하기
+import re
+def solution(phoneBook):
+
+    for b in phoneBook:
+        p = re.compile("^"+b)
+        for b2 in phoneBook:
+            if b != b2 and p.match(b2):
+                return False
+    return True
