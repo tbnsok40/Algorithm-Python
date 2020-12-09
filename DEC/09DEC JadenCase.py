@@ -1,11 +1,20 @@
 s = '3people unFollowed me'
 s = 'for the last week'
+
+def Jaden_Case(s):
+    answer =[]
+    for i in range(len(s.split())):
+        answer.append(s.split()[i][0].upper() + s.split()[i].lower()[1:])
+    return " ".join(answer)
+
+
 def solution(s):
     s = s.split(' ')
     temp = []
+    answer = ''
     for word in s:
-        word = word.lower()
-        word = list(word)
+        word = list(word.lower())
+
         try:
             word[0] = word[0].upper()
         except:
@@ -14,6 +23,3 @@ def solution(s):
     return ' '.join(temp)
 
 print(solution(s))
-
-li = 'abc'
-print(li.upper())
