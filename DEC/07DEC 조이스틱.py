@@ -15,43 +15,70 @@
 
 
 name = "JEROEN"
-name = "BBBAAAB" #9
+# name = "BBBAAAB" #9
 # name = "ABABAAAAABA" #11
 
 # 시작점 바로옆에 A가 붙어있으면, 그 반대쪽으로 순회 시작해야한다.
+
 def solution(name):
-    if len(name) == 1:
-        return 0
-    vertical = [91 - ord(string) if ord(string) > 78 else ord(string) - 65 for string in name]
-    if 'A' not in name:
-        horizon = len(name) - 1
-        return horizon + sum(vertical)
-
-    # 그냥 양쪽으로 다가봐
-    # 슬라이싱
-
+    vertical = [min(91 - ord(string), ord(string) - 65) for string in name]
+    answer = sum(vertical)
     name = list(name)
-    for i in range(len(name)):
-        rest = name[i + 1:]
-        if len(rest) == rest.count('A'):
-            store_r = i
-            break
-        elif len(rest) > len(name[:i]) + (len(rest)-rest.count('A')):
-            store_r = len(name[:i]) + (len(rest)-rest.count('A'))
-            break
-    for i in range(len(name), 0, -1):
-        rest = name[1:i]
-        if len(rest) == rest.count('A'):
-            store_l = len(name) - i
-            break
-        elif len(rest) > len(name[:i]) + (len(rest) - rest.count('A')):
-            store_l = len(name[:i]) + (len(rest)-rest.count('A'))
-            break
+    index = 0
+    N = len(name)
 
-    if store_l <= store_r:
-        return sum(vertical) + store_l
-    else:
-        return sum(vertical) + store_r
+    while True:
+        right = 1
+        left = 1
+        name[index] = 'A'
+
+        if name == ['A'] * N: break
+
+        for i in range(1, N):
+            if name[index + i] == 'A': right += 1
+            else: break
+
+        for i in range(1, N):
+            if name[index-i]=="A": left+=1
+            else: break
+
+        if right>left:
+            answer+=left
+            index-=left
+        else:
+            answer+=right
+            index+=right
+
+    return answer
 
 
-print(solution(name))
+
+# 다른 사람 풀이
+def solution(name):
+    answer = 0
+    name=list(name)
+    index=0
+    while(True):
+        right=1
+        left=1
+        if name[index] != 'A':
+            updown = min(ord(name[index])-ord('A'),(ord('Z')-ord(name[index])+1))
+            answer += updown
+        name[index] = 'A'
+        if name == ["A"]*len(name): break
+        for i in range(1,len(name)):
+            if name[index+i]=="A": right+=1
+            else: break
+        for i in range(1,len(name)):
+            if name[index-i]=="A": left+=1
+            else: break
+        if right>left:
+            answer+=left
+            index-=left
+        else:
+            answer+=right
+            index+=right
+    return answer
+
+
+# 알게된 사실: 파이썬 문자열은 슬라이싱은 제공하지만, item assignment는 제공하지 않는다
