@@ -15,3 +15,9 @@ def solution(brown, yellow):
         for a, b in temp:
             if brown == ((a + 2) * (b + 2)) - yellow and a >= b:
                 return [a+2,b+2]
+
+def solution(brown, yellow):
+    total = brown + yellow
+    for i in range(1, total + 1):
+        if total % i == 0 and yellow == ((int(total / i) - 2) * (i - 2)):
+            return [int(total / i), i]
