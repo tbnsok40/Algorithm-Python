@@ -6,7 +6,7 @@ def solution(n):
         return (solution(n - 1) + solution(n - 2)) % 1234567
     return (solution(n - 1) + solution(n - 2)) % 1234567
 print(solution(n))
-# 기본적으로 파이썬은 재귀함수에 시간이 많이 걸린다.
+# 기본적으로 파이썬은 재귀함수에 시간이 많이 걸린다. 그리고 n을 임의의 큰 수(100)으로 돌려봤는데 바로 시간에러뜬다(애초에 출력도 안됨 ㅠ)
 
 
 # n번째를 1234567로 나눈 나머지를 리턴하라
