@@ -1,23 +1,14 @@
 from math import gcd
-import heapq
+
+def lcm(a,b):
+    return a*b // gcd(a,b)
 
 def solution(arr):
-    total = 1
-    heap = []
-    for k in arr:
-        total *= k
-        heapq.heappush(heap,(-k, k))
-    while heap:
-        i, j = heapq.heappop(heap), heapq.heappop(heap)
-        i, j = i[1], j[1]
-        temp = gcd(i, j)
-        print(i, j, temp)
-        if len(heap) == 0:
-            break
-        heapq.heappush(heap, (-temp, temp))
-        # print('rest+heap: ', heap)
-    print()
-    return total // temp
+
+    while arr:
+        arr.append(lcm(arr.pop(), arr.pop()))
+        if len(arr) == 1:
+            return arr[0]
 
 arr = [2,6,8,14]
 # arr = [1,2,3]
@@ -26,4 +17,3 @@ print(solution(arr))
 
 
 
-print(7*14 // gcd(14,7))
