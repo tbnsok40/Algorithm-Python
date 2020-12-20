@@ -2,6 +2,7 @@
 
 # 1일 1 PS (20.10.18 ~ ) 프로그래머스 파이썬 문제 다 푸는 날 까지 ⚜️
 
+> <h2> OCT 2020 </h2>
 - 20.10.18 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/18OCT%20%EA%B8%B0%EB%8A%A5%EA%B0%9C%EB%B0%9C.py'>기능개발 프로그래머스</a>
 - 20.10.19 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/19OCT%20%EC%99%84%EC%A3%BC%ED%95%98%EC%A7%80%EB%AA%BB%ED%95%9C%EC%84%A0%EC%88%98.py'> 완주하지 못한 선수 프로그래머스 </a>
 - 20.10.20 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/20OCT%20%EC%8A%A4%ED%82%AC%ED%8A%B8%EB%A6%AC.py'> 스킬트리 프로그래머스 </a>
@@ -16,6 +17,8 @@
 - 20.10.29 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/29OCT%20%EC%B2%B4%EC%9C%A1%EB%B3%B5.py'> 체육복 프로그래머스 </a>
 - 20.10.30 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/30OCT%20%EB%91%90%EC%A0%95%EC%88%98%EC%82%AC%EC%9D%B4%EC%9D%98%ED%95%A9.py'> 두 정수 사이의 합 프로그래머스 </a>
 - 20.10.31 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/31OCT%20%EC%86%8C%EC%88%98%EC%B0%BE%EA%B8%B0.py'> 소수 찾기 프로그래머스 </a>
+
+> <h2> NOV 2020 </h2>
 - 20.11.01 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/01NOV%20%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84%EC%A0%95%EC%88%98%EB%A1%9C%EB%B0%94%EA%BE%B8%EA%B8%B0.py'> 문자열을 정수로 바꾸기 프로그래머스 </a>
 - 20.11.02 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/02NOV%20%EB%91%90%EA%B0%9C%EB%BD%91%EC%95%84%EC%84%9C%EB%8D%94%ED%95%98%EA%B8%B0.py'> 두개 뽑아서 더하기 프로그래머스 </a>
 - 20.11.03 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/03NOV%20%EB%82%98%EB%88%84%EC%96%B4%EB%96%A8%EC%96%B4%EC%A7%80%EB%8A%94%EC%88%AB%EC%9E%90%EB%B0%B0%EC%97%B4.py'> 나누어 떨어지는 숫자배열 프로그래머스 </a>
@@ -46,16 +49,26 @@
 - 20.11.28 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/28NOV%20%EB%AC%B8%EC%9E%90%EC%97%B4%EC%95%95%EC%B6%95.py'> 문자열압축(카카오) 프로그래머스 </a>
 - 20.11.29 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/29NOV%20%EB%8D%94%EB%A7%B5%EA%B2%8C.py'> 더맵게 프로그래머스 </a>
 - 20.11.30 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/30NOV%20%EA%B0%80%EC%9E%A5%ED%81%B0%EC%88%98.py'> 가장큰수 프로그래머스(retry) </a>
-- 20.12.01 | <a href = ''>  </a>
-- 20.12.02 | <a href = ''>  </a>
-- 20.12.03 | <a href = ''>  </a>
-- 20.12.04 | <a href = ''>  </a>
-- 20.12.05 | <a href = ''>  </a>
-- 20.12.06 | <a href = ''>  </a>
-- 20.12.07 | <a href = ''>  </a>
-- 20.12.08 | <a href = ''>  </a>
-- 20.12.09 | <a href = ''>  </a>
-- 20.12.10 | <a href = ''>  </a>
-- 20.12.11 | <a href = ''>  </a>
 
-- 20.11. | <a href = ''>  </a>
+> <h2> DEC 2020 </h2>
+- 20.12.01 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/01DEC%20%EC%82%BC%EA%B0%81%EB%8B%AC%ED%8C%BD%EC%9D%B4.py'> 삼각달팽이 프로그래머스 </a>
+- 20.12.02 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/02DEC%20%EC%86%8C%EC%88%98%EC%B0%BE%EA%B8%B0.py'> 소수찾기 프로그래머스 </a>
+- 20.12.03 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/03DEC%20%EC%9C%84%EC%9E%A5.py'> 위장 프로그래머스 </a>
+- 20.12.04 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/04DEC%20%ED%81%B0%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0.py'> 큰수만들기 프로그래머스 </a>
+- 20.12.05 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/05DEC%20%EC%A0%84%ED%99%94%EB%B2%88%ED%98%B8%EB%AA%A9%EB%A1%9D.py'> 전화번호목록 프로그래머스 </a>
+- 20.12.06 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/06DEC%20%EA%B5%AC%EB%AA%85%EB%B3%B4%ED%8A%B8.py'> 구명보트 프로그래머스 </a>
+- 20.12.07 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/07DEC%20%EC%A1%B0%EC%9D%B4%EC%8A%A4%ED%8B%B1.py'> 조이스틱 프로그래머스 </a>
+- 20.12.08 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/08DEC%20%ED%83%80%EA%B2%9F%EB%84%98%EB%B2%84.py'> 타겟넘버 프로그래머스 </a>
+- 20.12.09 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/09DEC%20JadenCase.py'> Jaden Case 프로그래머스 </a>
+- 20.12.10 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/10DEC%20%20%EB%8B%A4%EC%9D%8C%ED%81%B0%EC%88%AB%EC%9E%90.py'> 다음 큰 숫자 프로그래머스 </a>
+- 20.12.11 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/11DEC%20%EC%B9%B4%ED%8E%AB.py'> 카펫 프로그래머스</a>
+- 20.12.12 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/12DEC%20N%EA%B0%9C%EC%9D%98%20%EC%B5%9C%EC%86%8C%EA%B3%B5%EB%B0%B0%EC%88%98.py'> N개의 최소공배수 프로그래머스</a>
+- 20.12.13 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/13DEC%20%EC%B5%9C%EB%8C%93%EA%B0%92%EA%B3%BC%20%EC%B5%9C%EC%86%9F%EA%B0%92.py'> 최댓값과 최솟값 프로그래머스</a>
+- 20.12.14 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/14DEC%20%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98%20%EC%88%98.py'> 피보나치 수 프로그래머스 </a>
+- 20.12.15 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/15DEC%20%EC%88%AB%EC%9E%90%EC%9D%98%ED%91%9C%ED%98%84.py'> 숫자의 표현 프로그래머스</a>
+- 20.12.16 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/16DEC%20%ED%8F%B0%EC%BC%93%EB%AA%AC.py'> 폰켓몬 프로그래머스</a>
+- 20.12.17 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/17DEC%20%EC%B5%9C%EC%86%9F%EA%B0%92%EB%A7%8C%EB%93%A4%EA%B8%B0.py'> 최솟값 만들기 프로그래머스</a>
+- 20.12.18 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/18DEC%20%EB%A9%80%EC%A9%A1%ED%95%9C%20%EC%82%AC%EA%B0%81%ED%98%95.py'> 멀쩡한 사각형 프로그래머스</a>
+- 20.12.19 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/19DEC.py'> 가장 큰 정사각형 찾기 프로그래머스 </a>
+
+- 20.12. | <a href = ''>  </a>
