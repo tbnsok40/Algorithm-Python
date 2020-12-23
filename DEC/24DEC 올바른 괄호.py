@@ -1,5 +1,4 @@
 # 짝지어 제거하기와 비슷한 계열
-
 def solution(s):
     temp = []
     for i in s:
