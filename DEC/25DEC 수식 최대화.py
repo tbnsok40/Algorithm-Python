@@ -1,5 +1,4 @@
 from itertools import permutations
-
 def solution(s):
     re_count = ['*', '+', '-']
     count = []
@@ -41,6 +40,8 @@ def count_permu(temp, permus):
         return abs(eval(''.join(temp)))
     else:
         return abs(int(temp[0]))
+
+# 런타임 에러, 시간 초과
 
 
 # s = "100-200*300-500+20"
