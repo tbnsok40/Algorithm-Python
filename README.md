@@ -76,8 +76,8 @@
 - 20.12.23 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/23DEC%20%ED%96%89%EB%A0%AC%EC%9D%98%20%EA%B3%B1%EC%85%88.py'> 행렬의 곱셈 프로그래머스 </a>
 - 20.12.24 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/24DEC%20%EC%98%AC%EB%B0%94%EB%A5%B8%20%EA%B4%84%ED%98%B8.py'> 올바른 괄호 프로그래머스 </a>
 - 20.12.25 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/25DEC%20%EC%88%98%EC%8B%9D%20%EC%B5%9C%EB%8C%80%ED%99%94.py'> 수식 최대화 프로그래머스 </a>
-- 20.12.26 | <a href = ''> H-index 프로그래머스 </a>
-- 20.12.27 | <a href = ''> 큰수 만들기_retry </a>
+- 20.12.26 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/26DEC%20H-index.py'> H-index 프로그래머스 </a>
+- 20.12.27 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/27DEC%20%ED%81%B0%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0_retry.py'> 큰수 만들기_retry </a>
 - 20.12.28 | <a href = ''>  </a>
 
 - 20.12. | <a href = ''>  </a>
