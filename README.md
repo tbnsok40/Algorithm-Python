@@ -71,5 +71,13 @@
 - 20.12.18 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/18DEC%20%EB%A9%80%EC%A9%A1%ED%95%9C%20%EC%82%AC%EA%B0%81%ED%98%95.py'> 멀쩡한 사각형 프로그래머스</a>
 - 20.12.19 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/19DEC.py'> 가장 큰 정사각형 찾기 프로그래머스 </a>
 - 20.12.20 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/20DEC%20%EC%86%8C%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0.py'> 소수 만들기 프로그래머스 </a>
+- 20.12.21 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/21DEC%20%EC%A7%9D%EC%A7%80%EC%96%B4%20%EC%A0%9C%EA%B1%B0%ED%95%98%EA%B8%B0.py'> 짝지어 제거하기 프로그래머스 </a>
+- 20.12.22 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/22DEC%20%ED%8A%9C%ED%94%8C.py'> 튜플 프로그래머스 </a>
+- 20.12.23 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/23DEC%20%ED%96%89%EB%A0%AC%EC%9D%98%20%EA%B3%B1%EC%85%88.py'> 행렬의 곱셈 프로그래머스 </a>
+- 20.12.24 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/24DEC%20%EC%98%AC%EB%B0%94%EB%A5%B8%20%EA%B4%84%ED%98%B8.py'> 올바른 괄호 프로그래머스 </a>
+- 20.12.25 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/25DEC%20%EC%88%98%EC%8B%9D%20%EC%B5%9C%EB%8C%80%ED%99%94.py'> 수식 최대화 프로그래머스 </a>
+- 20.12.26 | <a href = ''> H-index 프로그래머스 </a>
+- 20.12.27 | <a href = ''> 큰수 만들기_retry </a>
+- 20.12.28 | <a href = ''>  </a>
 
 - 20.12. | <a href = ''>  </a>
