@@ -1,5 +1,5 @@
 > 20.10.18 이전까지 PS 코드는 PAST 파일에 모아둠
-
+> level2까지 풀고 자바로 다시풀기 및 파이썬 풀이 정리
 # 1일 1 PS (20.10.18 ~ ) 프로그래머스 파이썬 문제 다 푸는 날 까지 ⚜️
 
 > <h2> OCT 2020 </h2>
@@ -78,9 +78,9 @@
 - 20.12.25 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/25DEC%20%EC%88%98%EC%8B%9D%20%EC%B5%9C%EB%8C%80%ED%99%94.py'> 수식 최대화 프로그래머스 </a>
 - 20.12.26 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/26DEC%20H-index.py'> H-index 프로그래머스 </a>
 - 20.12.27 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/27DEC%20%ED%81%B0%EC%88%98%EB%A7%8C%EB%93%A4%EA%B8%B0_retry.py'> 큰수 만들기_retry </a>
-- 20.12.28 | <a href = ''> 캐시 프로그래머스 </a>
-- 20.12.29 | <a href = ''> </a>
-- 20.12.30 | <a href = ''> </a>
+- 20.12.28 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/28DEC%20%EC%BA%90%EC%8B%9C.py'> 캐시 프로그래머스 </a>
+- 20.12.29 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/29DEC%20%EC%A0%90%ED%94%84%EC%99%80%EC%88%9C%EA%B0%84%EC%9D%B4%EB%8F%99.py'> 점프와 순간이동 프로그래머</a>
+- 20.12.30 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/DEC/30DEC%20%EC%88%98%EC%8B%9D%EC%B5%9C%EB%8C%80%ED%99%94.py'> 수식최대화 카카오 </a>
 - 20.12.31 | <a href = ''> </a>
 
 
