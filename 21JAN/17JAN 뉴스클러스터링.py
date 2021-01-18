@@ -42,33 +42,40 @@ str2 = 'french'
 # # test 5, 13 error
 # print(solution(str1, str2))
 
+# 에러 원인: 교집합은 0이고 합집합은 0이 아닐 때를 생각해줘야 한다.
+# if len(uni_temp) == 0 and len(all_temp) != 0:
+#     return 0
+
+
+# 다른 풀이
 import re
 import math
 def solution(str1, str2):
     temp1 = [str1[i:i+2].lower() for i in range(0, len(str1)-1) if not re.findall('[^a-zA-Z]+', str1[i:i+2])]
     temp2 = [str2[i:i+2].lower() for i in range(0, len(str2)-1) if not re.findall('[^a-zA-Z]+', str2[i:i+2])]
-    print(temp1)
-    print(temp2)
+
     gyo = set(temp1) & set(temp2)
     hap = set(temp1) | set(temp2)
-    print(gyo)
-    print(hap)
 
-    str1 = [str1[i:i+2].lower() for i in range(0, len(str1)-1) if not re.findall('[^a-zA-Z]+', str1[i:i+2])]
-    str2 = [str2[i:i+2].lower() for i in range(0, len(str2)-1) if not re.findall('[^a-zA-Z]+', str2[i:i+2])]
-    print(str1)
-    print(str2)
-    gyo = set(str1) & set(str2)
-    hap = set(str1) | set(str2)
-    print(gyo)
-    print(hap)
+    # str1 = [str1[i:i+2].lower() for i in range(0, len(str1)-1) if not re.findall('[^a-zA-Z]+', str1[i:i+2])]
+    # str2 = [str2[i:i+2].lower() for i in range(0, len(str2)-1) if not re.findall('[^a-zA-Z]+', str2[i:i+2])]
+    # print(str1)
+    # print(str2)
+    # gyo = set(str1) & set(str2)
+    # hap = set(str1) | set(str2)
+    # print(gyo)
+    # print(hap)
+
+    if len(hap) == 0:
+        return 65536
 
 
     # gyo와 hap을 이용하여 str1, str2를 공략
-    gyo_sum = sum([min(str1.count(gg), str2.count(gg)) for gg in gyo])
-    hap_sum = sum([max(str1.count(hh), str2.count(hh)) for hh in hap])
+    gyo_sum = sum([min(temp1.count(gg), temp2.count(gg)) for gg in gyo])
+    hap_sum = sum([max(temp1.count(hh), temp2.count(hh)) for hh in hap])
     # print(gyo_sum)
     # print(hap_sum)
+
 
     # 이건 중복을 고려 못하기 때문에 바로 틀림 => gyo_sum, hap_sum으로 연산해야한다.
     # if len(gyo) != 0 and len(hap) != 0:
@@ -82,9 +89,6 @@ def solution(str1, str2):
     #     return math.floor(len(gyo_sum) / len(hap_sum) * 66536)
     # else:
     #     return 65536
-
-    if not hap:
-        return 66536
     return math.floor((gyo_sum/hap_sum)*65536)
 
 print(solution(str1, str2))
