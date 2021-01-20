@@ -38,3 +38,5 @@ relation = [["100", "ryan", "music", "2"],
 print(solution(relation))
 
 # set은 중복 허용안하니까 리스트와 세트와 길이 비교했을 때 같은거 리턴
+
+# 배운 것: tuple, set 차이, set.discard(), list.extend(), combinations(range(n), i)
