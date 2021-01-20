@@ -1,4 +1,5 @@
 from itertools import combinations
+# 결국 삼중 for문이지만,
 def solution(relation):
     n_row = len(relation)
     n_col = len(relation[0])
@@ -10,12 +11,15 @@ def solution(relation):
 
     # 유일성
     for keys in candidates:
-        tmp = [tuple([item[key] for key in keys]) for item in relation] # 자칫 다중 for문 될 것 같은데..? 결국 삼중for문
-        if len(set(tmp)) == n_row: # 중복된게 없다/ set(tmp)를 하면, 중복원소가 있을 경우 하나로 퉁쳐진다. 그러게 있다면, n_row와 길이가 같을 수 없다.
+        # 왜 굳이 tuple로 묶었지?
+        tmp = set([tuple([item[key] for key in keys]) for item in relation])
+        # for item in relation:
+        #     print(set(tuple(item[key] for key in keys)))
+        if len(tmp) == n_row: # 중복된게 없다/ set(tmp)를 하면, 중복원소가 있을 경우 하나로 퉁쳐진다. 그러게 있다면, n_row와 길이가 같을 수 없다.
             final.append(keys) # 유일성 만족한 상태 but 최소성은 아직 불만족
             # 결국 final에 남는 것은, 숫자값: 컬럼number(keys)
-    print(final)
-    # 최소성
+    # print(final)
+    # # 최소성
     answer = set(final)
     for i in range(len(final)):
         for j in range(i + 1, len(final)):
