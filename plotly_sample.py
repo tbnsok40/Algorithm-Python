@@ -19,12 +19,3 @@ plot = px.scatter(data_frame=df, x='width', y='y_name', color='species', title='
 plot.write_html('./index.html',
                 full_html=False,
                 include_plotlyjs='cdn')
-
-
-
-
-
-
-
-print((str(df.iloc[0,7])))
-
