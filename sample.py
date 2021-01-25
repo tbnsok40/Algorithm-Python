@@ -318,3 +318,28 @@ print(small_key)
 
 
 
+
+
+list1= [1,6,7,3,2]
+print(list1.sort())
+print(sorted(list1))
+
+
+dict2 = {}
+
+dict2['a'] = 1
+dict2['b'] = 2
+print(dict2['a'])
+
+
+string = '1234321'
+print(string.split('4'))
+
+print(string.count('3'))
+
+if score >= 91:
+    print("grade is A")
+elif 90 >= score and score >= 81:
+    print("grade is B")
+else:
+    print("grade is C")

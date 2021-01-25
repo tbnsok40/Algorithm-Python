@@ -28,16 +28,30 @@
 
 def solution(msg):
     table = dict()
-    for idx, value in enumerate("ABCDEFGHIJKLMNOPQRSTUVWXYZ",1):
+    for idx, value in enumerate("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 1):
         table[value] = idx
         last_idx = idx
-
 # table에 없는 수가 나올 때까지 더한다.
+    idx = 1
+    curr = msg[0]
+    ans = list()
+    while idx < len(msg):
+        if curr + msg[idx] not in table:
+            last_idx += 1
+            table[curr + msg[idx]] = last_idx
+            ans.append(table[curr])
 
-
-
-
-
-
+            curr = msg[idx]
+            idx += 1
+            continue
+        curr += msg[idx]
+        idx += 1
+    ans.append(table[curr])
+    print(curr, idx)
+    return ans
 msg = 'ABABABABABABABAB'
+# msg = 'KAKAO'
 print(solution(msg))
+
+
+
