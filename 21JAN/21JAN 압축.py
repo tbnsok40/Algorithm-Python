@@ -47,10 +47,11 @@ def solution(msg):
         curr += msg[idx]
         idx += 1
     ans.append(table[curr])
-    print(curr, idx)
     return ans
+
 msg = 'ABABABABABABABAB'
-# msg = 'KAKAO'
+msg = 'KAKAO'
+
 print(solution(msg))
 
 
