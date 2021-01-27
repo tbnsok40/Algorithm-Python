@@ -92,7 +92,7 @@ medium = ['E00', 'E01', 'E02', 'E03', 'E04', 'E05', 'E06', 'E07', 'E08', 'E09', 
 medium_dict = {}
 for key, value in zip(medium, medium_key):
     medium_dict[key] = value
-
+print('medium_dict ', medium_dict)
 # print(medium_dict)
 
 ##################################################################################################
@@ -308,38 +308,12 @@ towns = ['강남구',
 '장수군',
 '순창군',
 '제주특별자치도']
-small_key = {}
+small_dict = {}
 for k, v in zip(small, towns):
-    small_key[k] = v
+    small_dict[k] = v
 
 
 
-print(small_key)
+print('small_dict ', small_dict)
 
 
-
-
-
-list1= [1,6,7,3,2]
-print(list1.sort())
-print(sorted(list1))
-
-
-dict2 = {}
-
-dict2['a'] = 1
-dict2['b'] = 2
-print(dict2['a'])
-
-
-string = '1234321'
-print(string.split('4'))
-
-print(string.count('3'))
-
-if score >= 91:
-    print("grade is A")
-elif 90 >= score and score >= 81:
-    print("grade is B")
-else:
-    print("grade is C")
