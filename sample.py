@@ -92,7 +92,7 @@ medium = ['E00', 'E01', 'E02', 'E03', 'E04', 'E05', 'E06', 'E07', 'E08', 'E09', 
 medium_dict = {}
 for key, value in zip(medium, medium_key):
     medium_dict[key] = value
-print('medium_dict ', medium_dict)
+# print('medium_dict ', medium_dict)
 # print(medium_dict)
 
 ##################################################################################################
@@ -311,9 +311,13 @@ towns = ['강남구',
 small_dict = {}
 for k, v in zip(small, towns):
     small_dict[k] = v
+# print('small_dict ', small_dict)
 
-
-
-print('small_dict ', small_dict)
+LARGE = large
+LARGE_OBJ = {}
+LARGE_VALUE = ['경기북부', '인천/부천', '강원', '경기남부', '대전/충청', '대구/경북', '부산/울산', '창원', '광주/전남', '전북', '제주']
+for k, v in zip(LARGE, LARGE_VALUE):
+    LARGE_OBJ[k] = v
+print(LARGE_OBJ)
 
 
