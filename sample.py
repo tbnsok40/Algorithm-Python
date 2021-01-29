@@ -318,6 +318,25 @@ LARGE_OBJ = {}
 LARGE_VALUE = ['경기북부', '인천/부천', '강원', '경기남부', '대전/충청', '대구/경북', '부산/울산', '창원', '광주/전남', '전북', '제주']
 for k, v in zip(LARGE, LARGE_VALUE):
     LARGE_OBJ[k] = v
+# print(LARGE_OBJ)
+
+
+
+LARGE = ['서울중앙', '서울동부', '서울남부', '서울북부', '서울서부', '경기북부', '인천/부천', '강원', '경기남부', '대전/충청', '대구/경북', '부산/울산', '창원', '광주/전남', '전북', '제주']
+ans = []
+for i in range(1,19):
+    if i < 10:
+        ans.append('type_0' + str(i))
+    else:
+        ans.append('type_' + str(i))
+print(ans)
+LARGE_OBJ = dict()
+for k, v in zip(LARGE, ans):
+    LARGE_OBJ[v] = k
 print(LARGE_OBJ)
 
-
+# {semi.map(even= > {
+# return (< li >
+#         < button type="button" > {even} < / button >
+#         < / li >)
+# })}
