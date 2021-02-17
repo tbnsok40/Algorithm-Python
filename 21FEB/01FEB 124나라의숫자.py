@@ -16,4 +16,4 @@ def solution(n):
         n = p
     return answer
 
-print(solution(15))
+print(solution(27))
