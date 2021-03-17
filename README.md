@@ -16,8 +16,12 @@
 - 20.10.28 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/28OCT%20%EC%95%BC%EA%B7%BC%EC%A7%80%EC%88%98.py'> 야근지수 프로그래머스 </a>
 - 20.10.29 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/29OCT%20%EC%B2%B4%EC%9C%A1%EB%B3%B5.py'> 체육복 프로그래머스 </a>
 - 20.10.30 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/30OCT%20%EB%91%90%EC%A0%95%EC%88%98%EC%82%AC%EC%9D%B4%EC%9D%98%ED%95%A9.py'> 두 정수 사이의 합 프로그래머스 </a>
-- 20.10.31 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/31OCT%20%EC%86%8C%EC%88%98%EC%B0%BE%EA%B8%B0.py'> 소수 찾기 프로그래머스 </a> <br/>
-================================================================== 취업 ================================================================== <br/>
+- 20.10.31 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/OCT/31OCT%20%EC%86%8C%EC%88%98%EC%B0%BE%EA%B8%B0.py'> 소수 찾기 프로그래머스 </a> 
+
+<br/>
+
+------------------------------------------------------------- 취업 -------------------------------------------------------------
+<br/>
 <h2> NOV 2020 </h2>
 - 20.11.01 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/01NOV%20%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84%EC%A0%95%EC%88%98%EB%A1%9C%EB%B0%94%EA%BE%B8%EA%B8%B0.py'> 문자열을 정수로 바꾸기 프로그래머스 </a>
 - 20.11.02 | <a href = 'https://github.com/tbnsok40/Algorithm-Python/blob/master/NOV/02NOV%20%EB%91%90%EA%B0%9C%EB%BD%91%EC%95%84%EC%84%9C%EB%8D%94%ED%95%98%EA%B8%B0.py'> 두개 뽑아서 더하기 프로그래머스 </a>
