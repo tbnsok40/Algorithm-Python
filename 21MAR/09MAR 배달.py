@@ -15,6 +15,8 @@ def dijkstra(graph, start):
     distances[start] = 0
     queue = []
     heapq.heappush(queue, [distances[start], start])
+    # 굳이 우선순위 큐를 선언하는 이유, 가장 작은 값을 젤 먼저 빼내기 위함
+
     while queue:
         print(queue)
 
@@ -32,20 +34,3 @@ def dijkstra(graph, start):
 
     return distances
 print(dijkstra(graph, 'A'))
-
-
-def dijkstra(graph, start):
-    distances = {node: float('inf') for node in graph}
-    distances[start] = 0
-    queue = []
-    heapq.heappush(queue, [distances[start], start])
-    # 굳이 우선순위 큐를 선언하는 이유, 가장 작은 값을 젤 먼저 빼내기 위함
-
-    while queue:
-        current_distance, current_destination = heapq.heappop(queue)
-
-        if distances[current_destination] < current_distance:
-            continue  # 웬 컨티뉴?
-
-
-
