@@ -2,12 +2,12 @@ def solution(record):
     answer, tmp = list(), list()
     id_name = {"Enter": "님이 들어왔습니다.",
                "Leave": "님이 나갔습니다."}
-    temp = [(idx, *string.split(' ')) for idx, string in enumerate(record)]
+    temp = [string.split(' ') for string in record]
     for i in temp:
-        if i[1] != 'Leave':
-            id_name[i[2]] = i[3]
-        if i[1] == "Enter" or i[1] == "Leave":
-            tmp.append('{},{}'.format(i[2], i[1]))
+        if i[0] != 'Leave':
+            id_name[i[1]] = i[2]
+        if i[0] == "Enter" or i[0] == "Leave":
+            tmp.append('{},{}'.format(i[1], i[0]))
     for i in tmp:
         a, b = i.split(',')
         answer.append('{}{}'.format(id_name[a], id_name[b]))
