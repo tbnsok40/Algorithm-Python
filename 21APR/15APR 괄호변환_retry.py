@@ -1,69 +1,59 @@
-from collections import defaultdict
+from collections import deque
 
 
-def balance(string):
-    print('0', string)
-    balan = defaultdict(int)
-    for s in string:
-        balan[s] += 1
-
-    if balan[')'] == balan['(']:
-        return True
-    else:
-        return False
+def reverse(sentence):
+    return sentence[::-1]
 
 
-def correct(string):
-    stack = []
-    for s in string:
-        if s == '(':
-            stack.append(s)
+def detach(sentence):
+    temp_que = deque(sentence)
+    left, right = 0, 0
+    u, v = '', ''
+
+    while temp_que:
+        u += temp_que.popleft()
+        if u[-1] == "(":
+            left += 1
         else:
-            try:
-                stack.pop()
-            except IndexError:
-                return False
-    return len(stack) == 0
+            right += 1
 
+        if left == right:
+            break
 
-def detatch(sentence):
-    for sen in range(len(sentence)):
-        print('1', sen)
-        if balance(sentence[:sen]) == True:
-            print(sentence[:sen], '+ ',sentence[sen:])
-            return sentence[:sen], sentence[sen:]
+    v = ''.join(list(temp_que))
+    return u, v
 
 
 def recursive(sentence):
     if sentence == '':
-        return sentence
-
-    u, v = detatch(sentence)
+        return ''
+    u, v = detach(sentence)
     if correct(u):
         return u + recursive(v)
     else:
-        return "(" + recursive(v) + ")" + reverse(u[1:-1])
+        return '(' + recursive(v) + ')' + reverse(u[1:-1])
 
 
-def reverse(sentence):
-    return ''.join([')' if sen == "(" else "(" for sen in sentence])
+def correct(sentence):
+    stack = []
+    for sen in sentence:
+        if sen == "(":
+            stack.append(sen)
+        else:
+            if len(stack) == 0:
+                return False
+            else:
+                stack.pop()
+
+    return True if len(stack) == 0 else False
 
 
 def solution(p):
     return p if correct(p) else recursive(p)
 
-
-p = "(()())()"
 p = ")("
 
-# print(solution(p))
-print(detatch(p))
-
-
-# 함수 두개 생성
-# 올바른 문자열인지 검사하는 함수
-# 균형잡힌 문자열인지 검사하는 함수
-# 둘다 boolean 반환하도록
+print(solution(p))
 
 
 """

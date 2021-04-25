@@ -9,8 +9,7 @@ def solution(s):
         return 0
 
     for i in range(len(s)):
-        head = s.popleft()
-        s.append(head)
+        s.append(s.popleft())
         if is_correct(s):
             answer += 1
 
@@ -40,8 +39,5 @@ def is_correct(s):
                 temp.append(i)
         except KeyError:
             pass
-
-    if len(temp) == 0:
+    if not temp:
         return True
-    else:
-        return False
