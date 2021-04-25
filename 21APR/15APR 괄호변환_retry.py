@@ -2,7 +2,8 @@ from collections import deque
 
 
 def reverse(sentence):
-    return sentence[::-1]
+    # return sentence[::-1] 은 그냥 문자열의 순서를 뒤집는 것 뿐, 각 괄호의 방향을 뒤집는 것과는 다르다.
+    return ''.join([')' if s == '(' else '(' for s in sentence])
 
 
 def detach(sentence):
@@ -31,7 +32,8 @@ def recursive(sentence):
     if correct(u):
         return u + recursive(v)
     else:
-        return '(' + recursive(v) + ')' + reverse(u[1:-1])
+        # return '(' + recursive(v) + ')' + reverse(u[1:-1])
+        return '(' + recursive(v) + ')' + ''.join(list(map(lambda x: ")" if x =="(" else "(", u[1:-1])))
 
 
 def correct(sentence):
