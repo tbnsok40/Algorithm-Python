@@ -25,7 +25,8 @@ def is_possible(road_length, locations, light_range):
     return True
 
 
-def solution(road_length, locations):
+# 재귀 구조 없는 풀이
+def solution(road_length: int, locations: list):
     locations.sort()
     print(locations)
     distance_list = []  # 가로등 사이의 거리
@@ -39,13 +40,11 @@ def solution(road_length, locations):
             distance = (x - y) // 2
         else:
             distance = (x - y) // 2 + 1
-        print(x, y, distance)
         distance_list.append(distance)
 
     # v의 원소가
     if road_length > locations[-1]:
         distance_list.append(road_length - locations[-1])
-    # print(distance_list)
     return max(distance_list)
 
 # distance를 그냥 가장 크게 잡아 넣으면, 모든 거리를 다 비출 수 있다.
