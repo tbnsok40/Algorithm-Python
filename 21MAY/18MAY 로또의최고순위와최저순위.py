@@ -28,4 +28,5 @@ def solution(lottos, win_nums):
         return [1, 6]
     elif not count:
         return [6, 6]
-    return [7 - (len(count) + count_zero), 7 - len(count)]
+    else:
+        return [7 - (len(count) + count_zero), 7 - len(count)]
