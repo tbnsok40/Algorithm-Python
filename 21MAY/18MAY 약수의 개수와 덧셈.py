@@ -23,5 +23,6 @@ def get(num):
         result = "-"
     return result
 
+
 # refactoring 할 것
 print(solution(left, right))
