@@ -7,7 +7,6 @@ def change_hash(array):
     array = array.replace("F#", 'f')
     array = array.replace("G#", 'g')
     array = array.replace("A#", 'a')
-    array = array.replace("E#", 'e')
     return array
 
 
