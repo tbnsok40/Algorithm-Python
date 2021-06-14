@@ -15,14 +15,9 @@ def make_matrix(rows, columns):
 def solution(rows, columns, queries):
 
     matrix = make_matrix(rows, columns)
-<<<<<<< HEAD
     # index 일 뿐 값이 아니다. (top 보다 bottom이 크고, left보다 right가 크다)
     answer = []
 
-=======
-
-    # index 일 뿐 값이 아니다.
->>>>>>> c893f83f45c31304cf43f05ced6a422454509a18
     for x1, y1, x2, y2 in queries:
         top = x1 - 1
         left = y1 - 1
@@ -30,7 +25,6 @@ def solution(rows, columns, queries):
         right = y2 - 1
 
         temp = matrix[top][left]
-<<<<<<< HEAD
         mini = temp
 
         for i in range(bottom, top, -1):  # top < bottom # desc
@@ -64,27 +58,6 @@ def solution(rows, columns, queries):
 
 
 print(solution(6, 6, [[2, 2, 5, 4], [3, 3, 6, 6], [5, 1, 6, 3]]))
-=======
-
-        for i in range(left, right):
-            matrix[top][i] = matrix[top][i + 1]
-
-        for i in range(right, bottom):
-            matrix[i][right] = matrix[i + 1][right]
-    print(matrix)
-
-
-
-
-
-
-
-    answer = []
-    return answer
-
-
-print(solution(6, 6, [[2,2,5,4],[3,3,6,6],[5,1,6,3]]))
->>>>>>> c893f83f45c31304cf43f05ced6a422454509a18
 
 # rows:
 # columns:
