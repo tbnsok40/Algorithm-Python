@@ -6,11 +6,11 @@
 #     matrix = [[(row * columns) + (col + 1) for col in range(columns)] for row in range(rows)]
 #
 #     # queries 원소의 위치를 잘 파악하자. 인덱스0부터 시작하므로 1씩 빼주는 작업 필요
-#     for y1, x1, y2, x2 in queries:
-#         top = y1 - 1
-#         left = x1 - 1
-#         bottom = y2 - 1
-#         right = x2 - 1
+#     for top, left, bottom, right in queries:
+#         top = top - 1
+#         left = left - 1
+#         bottom = bottom - 1
+#         right = right - 1
 #
 #         temp = matrix[top][left]
 #         minimum = temp
@@ -45,35 +45,35 @@
 def solution(rows, columns, queries):
     matrix = [[(row * columns) + (col + 1) for col in range(columns)] for row in range(rows)]
     answer = []
-    for y1, x1, y2, x2 in queries:
-        y1, x1, y2, x2 = y1 - 1, x1 - 1, y2 - 1, x2 - 1
+    for top, left, bottom, right in queries:
+        top, left, bottom, right = top - 1, left - 1, bottom - 1, right - 1
 
-        temp = matrix[y1][x1]
+        temp = matrix[top][left]
         minimum = temp
 
-        for i in range(y1, y2):
-            value = matrix[i + 1][x1]
-            matrix[i][x1] = value
+        for i in range(top, bottom):
+            value = matrix[i + 1][left]
+            matrix[i][left] = value
             # print(value) range 에 의해 3칸만 출력됨 -> 한자리는 빈다는 말.
             minimum = min(minimum, value)
 
-        for i in range(x1, x2):
-            value = matrix[y2][i + 1]
-            matrix[y2][i] = value
+        for i in range(left, right):
+            value = matrix[bottom][i + 1]
+            matrix[bottom][i] = value
             minimum = min(minimum, value)
 
-        for i in range(y2, y1, -1):
-            value = matrix[i - 1][x2]
-            matrix[i][x2] = value
+        for i in range(bottom, top, -1):
+            value = matrix[i - 1][right]
+            matrix[i][right] = value
             minimum = min(value, minimum)
 
-        for i in range(x2, x1, -1):
-            value = matrix[i - 1][y1]
-            matrix[i][y1] = value
+        for i in range(right, left, -1):
+            value = matrix[top][i - 1]
+            matrix[top][i] = value
             minimum = min(value, minimum)
 
         answer.append(minimum)
-        matrix[y1][x1 + 1] = temp
+        matrix[top][left + 1] = temp
 
     return answer
 
