@@ -12,10 +12,7 @@ def solution(orders, course):
                 temp.append(''.join(sorted(combination)))
 
         menu = Counter(temp)
-        try:
-            maximum = max(Counter(temp).values())
-        except ValueError:
-            pass
+        if menu: maximum = max(menu.values())
 
         for key, value in menu.items():
             if value == maximum and maximum > 1:
@@ -24,8 +21,6 @@ def solution(orders, course):
     return answer
 
 
-
-
-orders = ["XYZ", "XWY", "WXA"] # # ["ABCFG", "AC", "CDE", "ACDE", "BCFG", "ACDEH"]
+orders = ["XYZ", "XWY", "WXA"]  # ["ABCFG", "AC", "CDE", "ACDE", "BCFG", "ACDEH"]
 course = [2, 3, 4]
 print(solution(orders, course))
