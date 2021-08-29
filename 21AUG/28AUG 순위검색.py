@@ -5,16 +5,6 @@ from collections import defaultdict
 # info_dict가 리스트야 하는걸 인지 못함.
 def solution(info, query):
     result = []
-    query_dict = dict()
-    for query_ in query:
-        query_ = query_.split(' ')
-        query_score = int(query_[-1])
-        query_info = query_[:-1]
-
-        while 'and' in query_info:
-            query_info.remove('and')
-        query_info = ''.join(query_info)
-        query_dict[query_info] = query_score
     info_dict = {}
 
     for info_ in info:
@@ -24,17 +14,33 @@ def solution(info, query):
         for product_temp in product_temps:
             case = ''.join(product_temp)
             if case in info_dict:
-                info_dict[case].append(int(inf[4]))  # int() 를 안해줘서 sort() 가 안먹혔던 거임.... 꼭 노트써라 시밸아
+                info_dict[case].append(int(inf[4]))
             if case not in info_dict:
                 info_dict[case] = [int(inf[4])]
 
     for key in info_dict.keys():
         info_dict[key].sort()
 
-    for key, value in query_dict.items():
-        if key in info_dict:
-            res = list(filter(lambda x: x >= value, info_dict[key]))
-            result.append(len(res))
+    for query_ in query:
+        query_ = query_.split(' ')
+        query_score = int(query_[-1])
+        query_info = query_[:-1]
+
+        while 'and' in query_info:
+            query_info.remove('and')
+        query_info = ''.join(query_info)
+
+        if query_info in info_dict:
+            scores = info_dict[query_info]
+            if len(scores) > 0:
+                start, end = 0, len(scores)
+                while end > start:
+                    mid = (end + start) // 2
+                    if scores[mid] >= query_score:
+                        end = mid
+                    else:
+                        start = mid + 1
+                result.append(len(scores) - start)
         else:
             result.append(0)
 
