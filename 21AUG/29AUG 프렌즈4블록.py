@@ -1,22 +1,22 @@
 import copy
 
-def removeSame(m, n, matrix, ):
+
+def removeSame(m, n, matrix):
     remove = []
-    before_matrix = copy.deepcopy(matrix)
+    # before_matrix = copy.deepcopy(matrix)
 
     for r in range(m):
         for c in range(n):
             c_ = c + 1
             r_ = r + 1
             if c_ < n and r_ < m:
-                if matrix[r][c] == matrix[r_][c] == matrix[r][c_] == matrix[r_][c_]:
+                if matrix[r][c] != 0 and matrix[r][c] == matrix[r_][c] == matrix[r][c_] == matrix[r_][c_]:
                     # 복사본 같은걸 만들어서, 조건 만족하는 모든 부분 0으로 만든다음에, 전체 순회.
-                    remove.append((r, c))
-    for rem in remove:
-        r_, c_ = rem[0], rem[1]
-        matrix[r_][c_], matrix[r_][c_ + 1], matrix[r_ + 1][c_], matrix[r_ + 1][c_ + 1] = 0, 0, 0, 0
-    if before_matrix == matrix:
-
+                   remove.append((r, c))
+    if len(remove) > 0:
+        for rem in remove:
+            r_, c_ = rem[0], rem[1]
+            matrix[r_][c_], matrix[r_][c_ + 1], matrix[r_ + 1][c_], matrix[r_ + 1][c_ + 1] = 0, 0, 0, 0
         return True
     else:
         return False
@@ -28,12 +28,12 @@ def solution(m, n, board):
         matrix.append(list(row))
     while True:
         a = removeSame(m, n, matrix)
-        print(a)
-        break
+        if not a:
+            break
+        # break
         # 한번 삭제되면 이동/ 조정 함수가 필요
-    # for m in matrix:
-    #     print(m)
-    print(matrix)
+    for m in matrix:
+        print(m)
     answer = 0
     return answer
 
@@ -41,11 +41,20 @@ def solution(m, n, board):
 # 2 x 2 면 지워지는 함수
 
 
-m = 4  # row
-n = 5  # column
-board = ["CCBDE",
-         "AAADE",
-         "AAABF",
-         "CCBBF"]
+# m = 4  # row
+# n = 5  # column
+# board = ["CCBDE",
+#          "AAADE",
+#          "AAABF",
+#          "CCBBF"]
+
+m = 6  # row
+n = 6  # colum
+board = ["TTTANT",
+         "RRFACC",
+         "RRRFCC",
+         "TRRRAA",
+         "TTMMMF",
+         "TMMTTJ"]
 
 print(solution(m, n, board))
