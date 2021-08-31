@@ -27,3 +27,5 @@ n = 2
 m = 3
 images = [[1, 2, 3], [3, 2, 1]]
 print(solution(n, m, images))
+
+# bfs, queue에 들어가는 것이 무슨 의미인지 파악하기
