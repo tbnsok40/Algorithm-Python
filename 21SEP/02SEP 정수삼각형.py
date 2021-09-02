@@ -1,24 +1,24 @@
 def solution(triangle):
-    R = len(triangle)
-    C = len(triangle[-1])
-    result = []
 
-    # 재귀 ( r, c, triangle, sum)
-    def recursive(row, column, triangle, total):
-        for r in range(row, R):
-            C_ = len(triangle[r])
-            for c in range(column, column + 2):
-                if r == R:
-                    result.append(total)
-                    return
-                if (r + 1) < R or (c + 1) < C_:
-                    total += triangle[r][c]
-                    recursive(r + 1, c, triangle, total)
-                    recursive(r + 1, c + 1, triangle, total)
+    for i in range(1, len(triangle)):
+        col_length = len(triangle[i])
+        for j in range(col_length):
+            if j == 0:
+                triangle[i][j] += triangle[i - 1][j]
+            elif j == col_length - 1:  # 여기서 -1 해주지 않으면 index 초
+                triangle[i][j] += triangle[i - 1][j - 1]
+            else:
+                triangle[i][j] += max(triangle[i - 1][j - 1], triangle[i - 1][j])
 
-    recursive(0, 0, triangle, triangle[0][0])
+    return max(triangle[-1])
 
-    return result
 
+# def solution(triangle):
+#     triangle = [[0] + t + [0] for t in triangle]
+#     for i in range(1, len(triangle)):
+#         for j in range(1, i + 2):
+#             triangle[i][j] += max(triangle[i - 1][j - 1], triangle[i - 1][j])
+#     return max(triangle[-1])
+# 예외처리 연산이 편하게 허깨비를 세운다. (indexError 안나도록)
 
 print(solution(triangle=[[7], [3, 8], [8, 1, 0], [2, 7, 4, 4], [4, 5, 2, 6, 5]]))
