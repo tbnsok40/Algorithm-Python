@@ -12,13 +12,6 @@ def solution(triangle):
 
     return max(triangle[-1])
 
-
-# def solution(triangle):
-#     triangle = [[0] + t + [0] for t in triangle]
-#     for i in range(1, len(triangle)):
-#         for j in range(1, i + 2):
-#             triangle[i][j] += max(triangle[i - 1][j - 1], triangle[i - 1][j])
-#     return max(triangle[-1])
 # 예외처리 연산이 편하게 허깨비를 세운다. (indexError 안나도록)
 
 print(solution(triangle=[[7], [3, 8], [8, 1, 0], [2, 7, 4, 4], [4, 5, 2, 6, 5]]))
