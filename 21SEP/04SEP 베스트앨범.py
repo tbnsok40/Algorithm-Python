@@ -6,6 +6,18 @@ def solution(genres, plays):
     plays_enum = []
     for idx, ele in enumerate(plays):
         plays_enum.append((idx, ele))
+    sums = dict()
+    for k, v in zip(genres, plays):
+        try:
+            sums[k] += v
+        except:
+            sums[k] = v
+
+    # 장르 순서대로 배열
+    tem = []
+    for k, v in sums.items():
+        tem.append((k, v))
+    tem = sorted(tem, key=lambda x: -x[1])
 
     for k, v in zip(genres, plays_enum):
         genres_dict[k].append(v)
@@ -13,18 +25,10 @@ def solution(genres, plays):
     for i in genres_dict:
         genres_dict[i] = sorted(genres_dict[i], key=lambda x: -x[1])
 
-    temp = []
-    for i in genres_dict:
-        temp.append((i, genres_dict[i][0][1]))
-
-    temp = sorted(temp, key=lambda x: -x[1])
     result = []
-    for t in temp:
-        k = (genres_dict[t[0]])[:2]
-        for kk in k:
-            result.append(kk[0])
-
+    for t in tem:
+        for item in genres_dict[t[0]][:2]:
+            result.append(item[0])
     return result
-
 
 print(solution(genres=["classic", "pop", "classic", "classic", "pop"], plays=[500, 600, 150, 800, 2500]))
