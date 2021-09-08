@@ -8,24 +8,13 @@ def solution(n, results):
     for i in range(n):
         for j in range(n):
             for k in range(n):
-
-                # if (matrix[i][j] == False) and (matrix[j][k] == False):
-                #     matrix[i][k] = False
-                #     matrix[k][i] = True
-                # if (matrix[i][j] == True) and (matrix[j][k] == True):
-                #     matrix[i][k] = True
-                #     matrix[k][i] = False
-
-                # refactoring
+                if matrix[i][j] == None:
+                    continue
+                # refactoring => 이거만 쓰면 터진다 (왜냐, 이전에는 True / False 로 값을 명시해줬지만
+                # 아래에선 그저 서로의 값이 같을 때 라는 조건을 단다. 이건 서로가 None 일 때도 조건문을 만족할 수 있기 때문에 에러가 발생한다.
                 if matrix[i][j] == matrix[j][k]:
                     matrix[i][k] = matrix[i][j]
                     matrix[k][i] = not matrix[i][k]
-
-
-
-
-    # for m in matrix:
-    #     print(m)
 
     answer = 0
     for i in range(n):
