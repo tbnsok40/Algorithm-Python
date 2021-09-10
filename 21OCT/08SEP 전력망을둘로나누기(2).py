@@ -1,39 +1,18 @@
 from itertools import combinations
+from collections import defaultdict, deque
 
 
 def solution(n, wires):
-    answer = float('inf')
+    for combi in combinations(wires, len(wires) - 1):
 
-    if n == 2:
-        # print('thi')
-        return 0
-    new_wires = []
-    for wire in wires:
-        new_wires.append(sorted(wire))
+        # dictionary 사용 못하겠다
+        # wire_dict = defaultdict(list)
+        # for k, v in combi:
+        #     wire_dict[k].append(v)
 
-    for case in combinations(new_wires, n - 2):
-        case = sorted([*case])
-        # case.sort()
-        first = []
-
-        for nodes in case:
-            if not first:
-                first += nodes
-
-            a, b = nodes
-            if a in first or b in first:
-                first += sorted(nodes)
-        absolute_value = abs(len(set(first)) - (n - len(set(first))))
-
-        # print(case)
-        # print(first, len(set(first)) , (n - len(set(first))))
-        # print(' ')
-        answer = min(answer, absolute_value)
     return answer
 
 
-# 하나씩 돌려가며 제거하든, 제외하여 연산한다.
-# first 만 구하면 second 는 자연스레 구해진다.
 
 
 # n = 9
