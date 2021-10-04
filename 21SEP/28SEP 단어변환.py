@@ -6,11 +6,8 @@ def solution(begin, target, words):
         return 0
 
     def checkDiff(alpha, beta):
-        diff = 0
-        for a, b in zip(alpha, beta):
-            if a != b:
-                diff += 1
-        if diff == 1:
+        diff = [1 for a, b in zip(alpha, beta) if a != b]
+        if sum(diff) == 1:
             return True
         else:
             return False
