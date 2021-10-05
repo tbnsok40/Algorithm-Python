@@ -21,8 +21,25 @@ def solution(enter, leave):
     #
     #     if not room:
     #         break
+    result = [0] * (len(enter) + 1)
+    enter, leave = deque(enter), deque(leave)
+    room = []
 
-    return
+    while leave:
+        if not room:
+            room.append(enter.popleft())
+        while enter and leave[0] not in room:
+            room.append(enter.popleft())
+
+        l = leave.popleft()
+        room.remove(l)
+
+        for r in room:
+            if r != l:
+                result[l] += 1
+                result[r] += 1
+    return result[1:]
+
 # enter = [1, 2, 3, 4]
 # leave = [1, 4, 2, 3]
 enter = [1, 3, 2]
