@@ -1,4 +1,4 @@
-from itertools import product
+from itertools import product, chain
 
 
 def solution(word):
@@ -14,9 +14,12 @@ def solution(word):
         word_set += list(map(list, product(basic, repeat=i)))
     result = sorted(list(map(lambda x: ''.join(x), word_set)))
     # 사실상, A, E, I, O, U 를 조합하여, 쫙 펼치고 소팅하면 된다.
+    
+    itertools.chain() : iterable 객체를 인수로 받아 하나의 iterator 로 반환
     """
     for i in range(2, 6):
-        word_set += list(map(list, product(basic, repeat=i)))
+        word_set = chain(word_set, list(map(list, product(basic, repeat=i))))
+        # word_set += list(map(list, product(basic, repeat=i)))
     result = sorted(list(map(lambda x: ''.join(x), word_set)))
     return result.index(word) + 1
 
