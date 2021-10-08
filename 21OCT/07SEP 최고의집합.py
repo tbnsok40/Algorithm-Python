@@ -9,22 +9,13 @@ def solution(n, s):
     # 1을 여러번 빼도 된다. 중복 허용.
     # i = 1
     # while i < s:
-    answer = []
-    base = s // n
-    remain = s % n
-    print(base, remain)
-    for _ in range(n - remain):
-        answer.append(base)
-    print(answer)
+    if s < n:
+        return [-1]
 
-        
+    base, remain = divmod(s, n)
+    answer = [base for _ in range(n)]
 
+    for idx in range(remain):
+        answer[idx] = base + 1
 
-    # print(temp)
-
-    return answer
-
-
-# 각 원소는 같은 값일 수 있다.
-# 더할 원소는 꼭 2개일 필요는 없다. n 개이다.
-print(solution(2, 8))
+    return sorted(answer)
