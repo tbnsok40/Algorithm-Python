@@ -11,4 +11,3 @@ def solution(sizes):
     return max_y * max_x
 
 print(solution(sizes=[[60, 50], [30, 70], [60, 30], [80, 40]]))
-
