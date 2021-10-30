@@ -8,14 +8,11 @@ dx = [1, 0, -1, 0]
 dy = [0, 1, 0, -1]
 
 queue = deque()
-# queue = deque([0, 0]) 안됨 이러면.
 max_area = -1
 count = 0
 for r in range(N):
     for c in range(M):
-
         # if board[r][c] == 1:
-
         area = 1
         queue.append([r, c])
         visited = []

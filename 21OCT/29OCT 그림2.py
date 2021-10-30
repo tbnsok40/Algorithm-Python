@@ -15,16 +15,16 @@ for r in range(N):
         if board[r][c] == 1:
             area = 1
             queue.append([r, c])
+            board[r][c] = 0  # 여기를 초기화 시켜주는게 중요하네 중복되지 않도록.
+
             while queue:
                 y, x = queue.popleft()
-                board[y][x] = 0  # 여기를 초기화 시켜주는게 중요하네 중복되지 않도록.
-
                 for i in range(4):
                     ny = y + dy[i]
                     nx = x + dx[i]
                     if (0 <= nx <= M - 1) and (0 <= ny <= N - 1) and (board[ny][nx] == 1):
                         queue.append([ny, nx])
-                        board[ny][nx] = 0  # 여기를 초기화 시켜주는게 중요하네 중복되지 않도록.
+                        board[ny][nx] = 0  # 여기'도' 초기화 시켜준다.
                         area += 1
             num_list.append(area)
 
