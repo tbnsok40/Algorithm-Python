@@ -1,17 +1,15 @@
 import sys
-from collections import defaultdict
 from itertools import chain
 
 N, M = map(int, sys.stdin.readline().split())
 board = [list(map(int, sys.stdin.readline().split())) for _ in range(N)]
-
-classes = defaultdict(list)
-for i in range(1, 7):
-    classes[i] = [0, 0]
-for sex, grade in board:
-    classes[grade][sex] += 1
+classes = [[0, 0] for _ in range(6)]
 count = 0
-for i in chain(*classes.values()):
+
+for sex, grade in board:
+    classes[grade - 1][sex] += 1
+
+for i in chain(*classes):
     if i > 0:
         b, r = divmod(i, M)
         if b == 0:
@@ -21,12 +19,6 @@ for i in chain(*classes.values()):
         else:
             count += b
 print(count)
-# for fe, ma in classes.values():
-#     try:
-#         b, r = divmod(fe, M)
-#         b2, r2 = divmod(ma, M)
-#     except:
-#         pass
 
 """
 3 3
