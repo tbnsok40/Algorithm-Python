@@ -1,0 +1,71 @@
+import sys
+from collections import deque
+
+
+N = int(input())
+
+board = [list(map(int, sys.stdin.readline().split())) for _ in range(N)]
+visited = [[0] * N for _ in range(N)]
+
+numberIsland = 1
+queue = deque()
+
+dx = [1, -1, 0, 0]
+dy = [0, 0, 1, -1]
+
+for r in range(N):
+    for c in range(N):
+        if board[r][c] == 1 and visited[r][c] == 0:
+            queue.append((r, c))
+            visited[r][c] = 1
+            board[r][c] = numberIsland
+
+            while queue:
+                r, c = queue.popleft()
+                for i in range(4):
+                    nx = c + dx[i]
+                    ny = r + dy[i]
+                    if -1 < nx < N and -1 < ny < N and board[ny][nx] == 1 and visited[ny][nx] == 0:
+                        # 각 대륙마다 번호를 부여
+                        board[ny][nx] = numberIsland
+                        queue.append((ny, nx))
+                        visited[ny][nx] = 1
+            numberIsland += 1
+
+
+for r in range(N):
+    for c in range(N):
+        if board[r][c] != 0:
+            for i in range(4):
+                nx = c + dx[i]
+                ny = r + dy[i]
+                if -1 < nx < N and -1 < ny < N and board[ny][nx] == 0:
+                    # 여기에 들어왔다는 건 테두리라는 뜻
+                    queue.append((r, c))
+
+
+# 대륙마다 고유 번호 가진다 => 다른 번호 가진 것들 끼리 이어본다.
+
+"""
+https://www.acmicpc.net/problem/2146
+1 <= N <= 100
+대륙이 3개든 5개든, 하나의 가장 짧은 다리만 완성시키고 리턴하면 된다.
+어느곳에서 출발한다 할 때, 다른 대륙과 맞닿아야지, 자기가 속한 대륙과 닿으면 안된다.
+다른 대륙인지는 어떻게 판단할 것인가. 
+1. 섬이 몇개인지 구한다.
+2. 섬중 하나를 선택해, 섬의 크기를 늘려가며, 다른 섬에 닿는 거리를 구한다.
+3. 과정 2를 전체 섬에 대해 구한 후 최소값을 출력
+
+10
+1 1 1 0 0 0 0 1 1 1
+1 1 1 1 0 0 0 0 1 1
+1 0 1 1 0 0 0 0 1 1
+0 0 1 1 1 0 0 0 0 1
+0 0 0 1 0 0 0 0 0 1
+0 0 0 0 0 0 0 0 0 1
+0 0 0 0 0 0 0 0 0 0
+0 0 0 0 1 1 0 0 0 0
+0 0 0 0 1 1 1 0 0 0
+0 0 0 0 0 0 0 0 0 0
+
+"""
