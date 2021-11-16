@@ -42,39 +42,3 @@ ori_count = bfs(ori_queue, ori_visited, ori_board, ori_count)
 rg_count = bfs(rg_queue, rg_visited, rg_board, rg_count)
 print(ori_count, end=' ')
 print(rg_count)
-
-
-#
-# for r in range(N):
-#     for c in range(N):
-#         if visited[r][c] == 0:
-#             queue.append((r, c))
-#             while queue:
-#                 r, c = queue.popleft()
-#                 for i in range(4):
-#                     ny = r + dy[i]
-#                     nx = c + dx[i]
-#                     if -1 >= ny or ny >= N or -1 >= nx or nx >= N:
-#                         continue
-#
-#                     if board[r][c] == board[ny][nx] and visited[ny][nx] == 0:
-#                         queue.append((ny, nx))
-#                         visited[ny][nx] = -1
-#             count += 1
-#
-# for r in range(N):
-#     for c in range(N):
-#         if rg_visited[r][c] == 0:
-#             rg_queue.append((r, c))
-#             while rg_queue:
-#                 r, c = rg_queue.popleft()
-#                 for i in range(4):
-#                     ny = r + dy[i]
-#                     nx = c + dx[i]
-#                     if -1 >= ny or ny >= N or -1 >= nx or nx >= N:
-#                         continue
-#
-#                     if rg_board[r][c] == rg_board[ny][nx] and rg_visited[ny][nx] == 0:
-#                         rg_queue.append((ny, nx))
-#                         rg_visited[ny][nx] = -1
-#             rg_count += 1
