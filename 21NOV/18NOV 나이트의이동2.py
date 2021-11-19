@@ -1,7 +1,10 @@
 import sys
 from collections import deque
 
-N = int(sys.stdin.readline().rstrip())
+
+input = lambda: sys.stdin.readline().rstrip()
+
+N = int(input())
 dx = [2, 2, -2, -2, 1, 1, -1, -1]  # len = 8
 dy = [1, -1, 1, -1, 2, -2, 2, -2]
 # 이차 배열로 만들고, 최소값만 저장하도록 바꾸자. 여러 경로가 겹치면서 c 값이 무조건적으로 업데이트 되는데, 최소 경로라는게 분명 존재하니 min() 을 사용하여 업뎃하자.
