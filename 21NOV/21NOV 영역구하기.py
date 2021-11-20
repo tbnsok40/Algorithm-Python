@@ -2,16 +2,11 @@ import sys
 from collections import deque
 
 
-def square():
-    return
-
-
 def __main__():
     row, col, n = map(int, sys.stdin.readline().rstrip().split())
     board = [[0] * col for _ in range(row)]
     visited = [[False] * col for _ in range(row)]
     queue = deque()
-    count = 0
 
     dx = [1, -1, 0, 0]
     dy = [0, 0, 1, -1]
@@ -31,9 +26,9 @@ def __main__():
         for c in range(col):
             if _board[r][c] == 0 and not _visited[r][c]:
                 queue.append((r, c))
+                _board[r][c] = 1
                 _visited[r][c] = True
 
-                _board[r][c] = 1
                 individual = 1
                 while queue:
                     _r, _c = queue.popleft()
@@ -48,14 +43,12 @@ def __main__():
                             _board[r][c] = 1
                             _visited[ny][nx] = True
                             individual += 1
-                result.append(individual)
-                # count += 1
 
-    # print('individual', individual)
-    # for b in _board:
-    #     print(b)
-    print(len(result))
+                result.append(individual)
+
     result = sorted(result)
+
+    print(len(result))
     print(' '.join(map(str, result)))
 
 
